@@ -7,8 +7,7 @@
 
 Code for the MSc dissertation *Expansion or Contraction: Comparing Oversampling and Edge Pruning for Imbalanced Anti-Money-Laundering Detection with Graph Attention Network* (University of Surrey, 2026).
 
-**Author:** Nguyen Long Hoang · **Supervisor:** Dr Alaa Marshan · 📄 [Full dissertation](docs/dissertation.pdf)
-
+**Author:** Nguyen Long Hoang · **Supervisor:** Dr Alaa Marshan ·
 ---
 
 ## Overview
@@ -338,14 +337,4 @@ The edge-aware GAT layer and temporal-split logic are adapted from the [Multi-GN
 - Zhao, T., Zhang, X., & Wang, S. (2021). GraphSMOTE: Imbalanced node classification on graphs with graph neural networks. *WSDM*.
 - Veličković, P., et al. (2018). Graph attention networks. *ICLR*.
 
-## Citation
 
-```bibtex
-@mastersthesis{hoang2026expansion,
-  author = {Hoang, Nguyen Long},
-  title  = {Expansion or Contraction: Comparing Oversampling and Edge Pruning for
-            Imbalanced Anti-Money-Laundering Detection with Graph Attention Network},
-  school = {University of Surrey},
-  year   = {2026}
-}
-```
