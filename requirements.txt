@@ -1,0 +1,8 @@
+# Core (versions used during development; PyG/torch versions should match your CUDA)
+torch>=2.0
+torch-geometric>=2.4
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.2
+# Optional: progress bars / experiment logging
+tqdm>=4.64

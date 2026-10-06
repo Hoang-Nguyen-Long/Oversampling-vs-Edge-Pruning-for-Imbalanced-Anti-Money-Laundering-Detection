@@ -1,0 +1,32 @@
+{
+  "_comment": "Base hyperparameters. Only depth and the intervention/loss vary across ablation arms (matched-budget principle). Tune lr/n_hidden/heads via validation AUPRC before the final runs.",
+  "lr": 0.006,
+  "weight_decay": 0.0,
+  "n_hidden": 64,
+  "n_heads": 4,
+  "n_gnn_layers": 2,
+  "dropout": 0.1,
+  "final_dropout": 0.1,
+  "epochs": 50,
+  "grad_clip": 1.0,
+
+  "drop_rate": 0.2,
+  "_drop_rate_note": "DropEdge proportion. Treated as an experimental factor: sweep {0.1, 0.2, 0.3, 0.5}. NOT a fixed literature value (addresses supervisor point 6 on unjustified thresholds).",
+
+  "smote_ratio": 1.0,
+  "smote_k": 5,
+  "_smote_note": "Edge-SMOTE oversamples minority by this multiple; sweep {0.5, 1.0, 2.0}.",
+
+  "focal_alpha": 0.25,
+  "focal_gamma": 2.0,
+  "_focal_note": "Defaults from Lin, T. Y. et al. (2017).",
+
+  "cb_beta": 0.9999,
+  "_cb_note": "Class-balanced beta from Cui et al. (2019); beta->1 approaches inverse-frequency weighting.",
+
+  "target_precision": 0.5,
+  "_threshold_note": "Operating threshold chosen on VALIDATION to reach this precision, applied unchanged to test.",
+
+  "depth_sweep": [2, 4, 8, 16],
+  "seeds": [0, 1, 2]
+}
